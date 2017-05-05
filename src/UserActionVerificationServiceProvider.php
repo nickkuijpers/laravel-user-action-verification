@@ -3,6 +3,7 @@
 namespace Niku\LaravelUserActionVerification;
 
 use Illuminate\Support\ServiceProvider;
+
 use Niku\LaravelUserActionVerification\Services\UserActionVerification;
 
 class UserActionVerificationServiceProvider extends ServiceProvider
@@ -36,6 +37,7 @@ class UserActionVerificationServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/niku-user-action-verification.php' => config_path('niku-user-action-verification.php'),
         ], 'niku-user-action-verification');
+
     }
 
     /**
